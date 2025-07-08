@@ -1,1 +1,1 @@
-# git-crash-cource!!
+# git-crash-course
