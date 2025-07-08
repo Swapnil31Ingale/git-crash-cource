@@ -20,5 +20,18 @@ git checkout feature # Switch to the feature branch
 
 git checkout -b feature1 # Create and switch to a new branch named feature1
 
+git stash # Stash changes in the working directory, saving them for later
+git stash pop # Apply the stashed changes back to the working directory
+
+git revert <commit-hash> # Create a new commit that undoes the changes made by the specified commit
+git reset --hard <commit-hash> # Reset the current branch to the specified commit, discarding all changes after that commit
+git reset --soft <commit-hash> # Reset the current branch to the specified commit, keeping changes in the working directory
+git reset --mixed <commit-hash> # Reset the current branch to the specified commit, keeping changes in the staging area
+
+git rebase main # Reapply commits from the current branch {test} on top of the main branch, it maintains all the commit history.
+git rebase --abort # Abort the rebase process if you encounter conflicts or decide not to
+git rebase -i main # Interactively rebase, allowing you to edit, squash, or reorder commits
+git rebase --continue # Continue the rebase after resolving conflicts
+
 
 
