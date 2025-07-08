@@ -15,6 +15,12 @@ git push -u origin main
 git remote -v
 git remote add upstream https://github.com/Swapnil31Ingale/git-crash-cource.git
 
+<<<<<<< HEAD
+=======
+git branch --set-upstream:main origin/main # Set the upstream branch for the current branch to origin/main
+git branch -vv # Show all branches with their upstream tracking information and last commit
+
+>>>>>>> origin/test
 git branch feature # Create a new branch named feature without switching to it
 git checkout feature # Switch to the feature branch
 
